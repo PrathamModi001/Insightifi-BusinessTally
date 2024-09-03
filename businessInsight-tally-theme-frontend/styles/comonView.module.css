@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.body {
+  background: var(--landing-white-color);
+}
+
+.containerBlockCenter {
+  display: flex;
+  justify-content: center;
+}
+.containerAlignCenter {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.section1Div {
+  height: 900px;
+}
+
+.section1DivLogin {
+  height: 900px;
+}
+
+.section2DivLogin {
+  height: 700px;
+}
+
+.sectionRequestUs {
+  height: 780px;
+  position: relative;
+}
+.section1DivSignup {
+  height: 1100px;
+}
+
+.leftvector {
+  position: absolute;
+  z-index: 1;
+}
+
+.leftvectorSignup {
+  position: absolute;
+  z-index: 1;
+}
+
+.commonBlock1 {
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: left;
+}
+
+.centerBlockDiv {
+  position: absolute;
+  z-index: 1;
+  padding-top: 115px;
+  padding-left: 4%;
+  right: auto;
+}
+
+.ContactUsDivBlock {
+  position: absolute;
+  z-index: 1;
+
+  right: auto;
+}
+.requestUsDivBlock {
+  position: absolute;
+  z-index: 1;
+  padding: 45px 4% 0px 4%;
+  right: auto;
+}
+.centerBlockDivSignup {
+  position: absolute;
+  z-index: 1;
+  padding-top: 115px;
+  padding-left: 4%;
+  right: auto;
+}
+
+.registerOtpBox {
+  padding-top: 222px !important;
+}
+
+.orangeColor {
+  color: var(--landing-Orange-color) !important;
+}
+
+.formBlockDiv {
+  background: var(--landing-white-color);
+  width: 462px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid var(--landing-Orange-color);
+  border-radius: 25px;
+  padding: 50px;
+}
+
+.ContactUsDiv {
+  background: var(--landing-white-color);
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid var(--landing-Orange-color);
+  border-radius: 25px;
+  padding: '0px 25px 50px 25px';
+}
+.formStyle {
+  max-width: 480px;
+  padding: 0.5rem 2rem;
+}
+
+.submitBtn {
+  background: var(--landing-Orange-gradiant-color);
+}
+
+.commonBlock2 {
+  z-index: 1;
+  width: 50%;
+  display: flex;
+  align-items: end;
+  /* padding-right: 50px; */
+  justify-content: right;
+}
+
+.rightvector {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
+.containerCommonBlockSpace {
+  padding-top: 85px;
+}
+
+.forgotPasswordBlock {
+  padding-top: 185px;
+}
+
+.contactUS {
+  padding: 10% 10% 5% 10%;
+}
+
+/* Container style */
+
+/* Style for each icon container */
+.footerRightList {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px; /* Adjust padding as needed */
+  border-radius: 50%; /* To make the background a circle */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.footerRightList:hover {
+  background-color: white;
+  color: transparent;
+}
+
+.footerRightList:hover .footerRightIconSize {
+  color: rgba(0, 0, 0, 0.76);
+}
+
+/* meadia query for responsive */
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1199.98px) {
+  .container {
+    width: 960px;
+  }
+  .containerCommonBlock {
+    display: flex;
+    width: 960px;
+  }
+  .commonBlock2 {
+    display: none;
+  }
+  .centerBlockDiv {
+    right: 115px;
+    top: 100px;
+  }
+  .centerBlockDivSignup {
+    right: 115px;
+    top: auto;
+  }
+}
+
+@media (max-width: 1099.98px) {
+  .centerBlockDiv {
+    right: 60px;
+    top: 100px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991.98px) {
+  .ContactUsDivBlock {
+    padding: 60px 4% 0px 4%;
+  }
+  .container {
+    width: 720px;
+  }
+  .containerCommonBlock {
+    display: flex;
+    width: 720px;
+  }
+  .commonBlock1 {
+    display: none;
+  }
+  .centerBlockDiv {
+    right: auto;
+    top: 50px;
+    padding-left: 0px;
+  }
+  .centerBlockDivSignup {
+    right: auto;
+    top: 50px;
+    padding-left: 0px;
+  }
+  .body {
+    background: var(--landing-firstdiv-background);
+  }
+  .contactUS {
+    background: #dfeeff;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+  .containerCommonBlock {
+    display: flex;
+    width: 540px;
+  }
+  .leftvectorSignup {
+    display: none;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .section2DivLogin {
+    height: 1100px;
+  }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+
+  .container {
+    width: 100% !important;
+  }
+  .containerCommonBlock {
+    display: flex;
+    width: 100% !important;
+  }
+  .leftvector {
+    display: none;
+  }
+  .sectionRequestUs {
+    height: 755px;
+  }
+  .requestUsDivBlock {
+    padding: 65px 4% 0px 4%;
+  }
+  .formStyle {
+    padding: unset;
+  }
+}
+
+@media (max-width: 475.98px) {
+  .containerCommonBlock {
+    display: flex;
+    width: 100% !important;
+  }
+
+  .rightvector {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    width: auto;
+    height: 800px;
+  }
+
+  .section1Div {
+    height: 800px !important;
+    background: var(--landing-firstdiv-background);
+  }
+
+  .formBlockDiv {
+    width: 400px;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .formBlockDiv {
+    width: 355px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .containerCommonBlock {
+    display: flex;
+    width: 1140px;
+  }
+  .commonBlock2 {
+    display: none;
+  }
+  .centerBlockDiv {
+    right: 115px;
+    top: 100px;
+  }
+  .centerBlockDivSignup {
+    right: 115px;
+    top: auto;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+  .containerCommonBlock {
+    display: flex;
+    width: 1400px;
+  }
+  .commonBlock2 {
+    z-index: 1;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    /* padding-right: 50px; */
+    justify-content: right;
+  }
+  .centerBlockDiv {
+    position: absolute;
+    z-index: 1;
+    padding-top: 115px;
+    padding-left: 4%;
+    right: auto;
+    top: 0px;
+  }
+  .centerBlockDivSignup {
+    position: absolute;
+    z-index: 1;
+    padding-top: 115px;
+    padding-left: 4%;
+    right: auto;
+    top: 0px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1445px) {
+  .containerCommonBlock {
+    display: flex;
+    width: 1445px;
+  }
+}

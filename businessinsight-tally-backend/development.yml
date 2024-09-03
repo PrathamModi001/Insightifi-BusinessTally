@@ -1,0 +1,36 @@
+# this file is for creating docker image while developing so don't tocuh it without permission
+
+version: '3.9'
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  db:
+    image: postgres:latest
+    volumes:
+      - telly-postgres-data:/var/lib/postgresql/telly-data
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_DB=Tally
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    networks:
+      - app-tier
+
+  backend:
+    build: .
+    depends_on:
+      - db
+    env_file:
+      - .env
+    ports:
+      - '8000:8000'
+    command: /bin/bash -c "npm start"
+    networks:
+      - app-tier
+
+volumes:
+  telly-postgres-data:

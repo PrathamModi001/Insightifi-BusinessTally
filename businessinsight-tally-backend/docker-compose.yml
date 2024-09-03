@@ -1,0 +1,12 @@
+# this file is for creating docker image on instance so don't tocuh it without permission 
+
+version: '3.9'
+
+services:
+  backend_tally:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - '80:8000'
+    command: /bin/bash -c "npm start"

@@ -1,0 +1,24 @@
+/* components/TextEditor.module.css */
+.editorContainer {
+  border: 1px solid black;
+  padding: 10px;
+  overflow: visible; /* Ensure overflow is handled */
+  position: relative; /* Position relative for dropdown positioning */
+}
+
+.toolbar {
+  overflow: visible; /* Ensure toolbar dropdowns are visible */
+}
+
+.wysiwyg-wrapper {
+  overflow: visible !important; /* Ensure wrapper overflow is visible */
+}
+
+.rdw-dropdown-optionwrapper {
+  z-index: 9999;
+  overflow: visible;
+}
+
+.rdw-editor-wrapper {
+  overflow: visible !important;
+}
